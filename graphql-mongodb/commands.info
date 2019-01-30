@@ -1,0 +1,45 @@
+- npm init --yes
+
+- npm install express graphql apollo-server-express graphql-tools mongoose -save
+
+#Node no entiende algunas cosas entre ellas "import", para ello se usa un traductor: babel, que le permite a node entender.
+#La -D se usa para instalar las dependencias usadas en desarrollo
+
+- npm i babel-cli babel-core babel-preset-env -D
+
+
+--- agregar en el packjson =>  "dev": "babel-node src/index.js"
+--- agregar .babelrc para que node reconozca el import de express
+
+#Mongodb  Linux mint
+  http://linuxforever.info/2017/04/13/how-to-install-mongodb-3-4-in-linux-mint-18-ubuntu-16-04/
+
+  1. sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+  2. echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+  3. sudo apt-get update
+  4. sudo apt-get install -y mongodb-org
+  5. sudo mkdir -p /data/db/
+  6. sudo chmod -R 775 /data/
+  7. sudo touch /etc/systemd/system/mongodb.service
+  8. sudo nano /etc/systemd/system/mongodb.service
+  9. paste:
+
+      [Unit]
+      Description=High-performance, schema-free document-oriented database
+      After=network.target
+
+      [Service]
+      User=mongodb
+      ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+
+      [Install]
+      WantedBy=multi-user.target
+
+  10. sudo systemctl start mongodb
+
+
+
+-- necesita escribir una variable de entorno
+sudo npm i mongoose -g
+
+en una consola aparte debo inicializar mongodb para eso ejecuto: sudo mongod,

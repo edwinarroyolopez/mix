@@ -1,0 +1,12 @@
+Install node:
+https://github.com/nodesource/distributions#debinstall
+
+Node.js v10.x:
+
+  # Using Ubuntu
+  1. curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+  2. sudo apt-get install -y nodejs
+
+
+Uninstall node:
+1. sudo apt-get remove nodejs

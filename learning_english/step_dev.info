@@ -1,0 +1,19 @@
+## start project ##
+1. npm install -g create-react-app
+2. create-react-app learning_english
+
+##  folders  ##
+1. create folders: web - server
+
+#### WEB ####
+1. folders => views
+2. Router
+    npm i --save react-router-dom react-router
+    Nota: Router debe tener sólo un hijo
+3. definir archivos de views (que se incluyeron en las rutas)
+4. Definir estilos
+  npm i --save npm-run-all node-sass-chokidar => compilar estilos y código react
+
+ cambiar scripts => start - build
+5. Estilos sass
+6.

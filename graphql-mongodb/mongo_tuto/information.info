@@ -1,0 +1,14 @@
+Command 1: mongod => Inicia el servidor de mongodb
+
+
+Command 2: mongo => shell mongo, consola de mongo
+
+    in console mongo:
+    a. show dbs => Muestra las bases de datos
+    b. use mydatabase => Crea una db
+    c. show collections => muestra las colecciones de la db
+    d. db.usuarios.insert({nombre:"juan"}) => Crea una tabla "usuarios" e inserta un registro
+    e. show collections
+    f. db.usuarios.find() => Trae todos los registros de la tabla usuarios
+
+Command 3: mongodump => para hacer backups 

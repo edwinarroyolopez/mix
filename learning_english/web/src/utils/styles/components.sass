@@ -1,0 +1,38 @@
+
+.TextInput
+  font-size: 0.9em
+  line-height: 30px
+  position: relative
+  display: flex
+  flex-grow: 1
+
+.TextInput .pop-label
+  position: absolute
+  top: 6px
+  font-weight: 300
+  z-index: -1
+  margin-left: 12px
+  font-size: 16px
+  color: #c4c4c4
+  transition: all .3s ease
+  display: table
+  left: 0
+.TextInput input
+  height: 26px
+  background-color: transparent
+  width: 100%
+  line-height: 1.4
+  padding: 6px 12px
+  border: 1px solid #ccc
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+  box-shadow: none
+  font-size: 16px
+  color: #333
+  font-weight: 300
+  outline: 0
+  border-radius: 4px
+.TextInput input:focus
+    border-color: #66afe9
+.TextInput input:focus  ~ .pop-label
+  transform: translateX(-100%) translateX(-20px)
+  color: #66afe9

@@ -1,0 +1,66 @@
+
+# Write your query or mutation here
+mutation getLogin($username: String!, $pass: String!) {
+		Login:Login(username: $username, pass:$pass){
+      name
+    	username
+      pass
+      email
+  }
+}
+
+
+mutation createUser( $name: String!, $pass: String!, $email: String ) {
+  createUser(input: { name: $name, pass: $pass, email: $email }) {
+    name
+    pass
+    email
+  }
+}
+
+
+{"name":"Light","pass":"abcd.1234","email":"zeroed@grmail.com"}
+
+
+# Write your query or mutation here
+
+query {
+		allUsers{
+    name
+      username
+    pass
+    email
+  }
+}
+
+
+
+# Write your query or mutation here
+mutation {
+  createUser(input: { name: "Light", pass: "654321", email: "nn" }) {
+    name
+    pass
+    email
+  }
+}
+
+
+# Write your query or mutation here
+query {
+		allUsers{
+    name
+    pass
+    email
+  }
+}
+-----------
+# Write your query or mutation here
+query getUser($name: String!){
+  Usuario: User(name: $name){
+    name
+    pass
+    email
+  }
+}
+# VARIABLES
+{"name":"light"}

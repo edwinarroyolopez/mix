@@ -1,0 +1,21 @@
+.login {
+  border-radius: 0.3em;
+  margin: 5em auto;
+  padding: 2em;
+  width: 25em; }
+
+.content_button {
+  line-height: 2em; }
+
+.content_button .button {
+  border: solid 1px #c8c8c8;
+  border-radius: 0.2em;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  letter-spacing: .25px;
+  line-height: 40px;
+  margin: 0.5em;
+  padding: 0 0.5em;
+  /* quitar seleccion */
+  user-select: none; }

@@ -1,0 +1,15 @@
+
+mutation {
+  createCar(name: "Tesla Model X") {
+    _id
+    name
+  }
+}
+
+
+{
+  allCars{
+  	_id
+    name
+	}
+}

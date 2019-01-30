@@ -1,0 +1,11 @@
+1. install babel
+/* npm i --save babel-cli babel-core babel-preset-env */
+npm i babel-cli babel-core babel-preset-env -D
+
+2. install package
+npm i --save express apollo-server-express graphql graphql-tools mongoose
+
+3. Create models mongodb
+4. Definition of resolvers and typedefs
+
+5. make index.js
